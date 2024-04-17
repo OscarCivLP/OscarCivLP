@@ -574,7 +574,7 @@ function randomLand() {
   let Land = AlleLänderÜbrig[LandIndex].Abkürzung;
   let LandName = AlleLänderÜbrig[LandIndex].Name;
   let angezeigteFlagge = document.getElementById("angezeigteFlagge")
-    angezeigteFlagge.src = "/Bilder/" + Land + ".png";
+    angezeigteFlagge.src = "/Bilder/" + Land.toLowerCase() + ".png";
 //wiederholungen verhindern
     AlleLänderÜbrig.splice(LandIndex, 1)
     console.log(AlleLänderÜbrigLänge)
