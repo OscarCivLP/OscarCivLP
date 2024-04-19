@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1 id="Titel"> Flaggen Quiz</h1>
-    <link rel="stylesheet" href="styles1.1.css">
+    <h1> Flaggen Quiz</h1>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
- 
+    <img id="Hearts" src="/HeartsBilder/0Fehler.png" alt="Hearts">
     <img src="/Bilder/ad.png" id="angezeigteFlagge" class="Flaggen"> <br>
-    <img id="Hearts" src="/HeartsBilder/0Fehler.png" alt="Hearts">  
-<div id ="allbuttons", class="btn-group">
+<div id = "allbuttons", class="btn-group">
     <button class="button" onclick="check(this)" id="Button0">Click me</button>
     <button class="button" onclick="check(this)" id="Button1">Click me</button>
     <button class="button" onclick="check(this)" id="Button2">Click me</button>
     <button class="button" onclick="check(this)" id="Button3">Click me</button>
 </div>
 <br>
-<div id="Scorediv">
-<div class="Score"> Score:</div> <div class="Score" id="ScoreAnzeige">0</div> 
-<div class="Score" id="StreakDisplay">Streak: 0</div>
+<span class="Score"> Score:</span> <span id="ScoreAnzeige">0</span> 
+<span id="StreakDisplay">Streak: 0</span>
 <br>
-</div>
 <audio id="correctSound">
     <source src="/SoundEffects/correct.mp3" type="audio/mpeg">
 </audio>
@@ -30,14 +27,15 @@
 <audio id="deathSound">
     <source src="/SoundEffects/WRONG1.mp3" type="audio/mpeg">
 </audio>
-<div id="Feedback" class="Feedback" hidden>
+<div id="Feedback" hidden>
 <h2 id="FeedbackText">Well done!</h2>
 <span id="totalScore1">0</span>
 <br>
-<button onclick="restart()"  id="restartbutton">Try Again?</button>
-    <h3>Your Highscore</h3>
-    <p id="Highscore">0</p>
+<button onclick="restart()">Try Again?</button>
+    <h2 id="Highscore">Your Highscores</h2>
 </div>
+
+
 </body>
-<script src="script1.1.js"></script>
+<script src="script.js"></script>
 </html>
